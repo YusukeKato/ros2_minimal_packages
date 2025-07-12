@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'lifecycle_node'
+package_name = 'minimal_lifecycle_node'
 
 setup(
     name=package_name,
@@ -13,14 +13,14 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='ubuntu',
-    maintainer_email='contact@yusukekato.jp',
-    description='TODO: Package description',
+    maintainer='YusukeKato',
+    maintainer_email='yusukekato.contact@gmail.com',
+    description='Minimal Lifecycle Node',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'lifecycle_node = lifecycle_node.lifecycle_node:main',
+            'minimal_lifecycle_node = minimal_lifecycle_node.minimal_lifecycle_node:main',
         ],
     },
 )
