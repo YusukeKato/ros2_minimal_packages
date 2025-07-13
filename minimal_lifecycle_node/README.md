@@ -1,5 +1,9 @@
 # Minimal Lifecycle Node
 
+## Install
+
+[ros2_minimal_packages/README.md/#Install](../README.md#install)
+
 ## Terminal 1
 
 ```sh
