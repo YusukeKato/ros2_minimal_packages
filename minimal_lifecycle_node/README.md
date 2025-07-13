@@ -53,3 +53,10 @@ $ ros2 topic echo /minimal_lifecycle_node_topic
 # ---
 # ...
 ```
+
+## Reference
+
+- [ros2/demos](https://github.com/ros2/demos/)
+  - Copyright 2021 Open Source Robotics Foundation, Inc.
+  - URL: https://github.com/ros2/demos/tree/jazzy/lifecycle_py
+  - LICENSE: [Apache 2.0](https://github.com/ros2/demos/blob/jazzy/LICENSE)
