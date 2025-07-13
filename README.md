@@ -1,5 +1,7 @@
 # ros2_minimal_packages
-ROS 2 Minimal Packages
+ROS 2 Minimal Packages for Tutorials.
+
+![](./images/rviz_minimal_wheeled_robot.png)
 
 ## Environments
 
@@ -20,3 +22,7 @@ rosdep install -iry --from-paths src
 colcon build --symlink-install
 source ~/ros2_ws/install/setup.bash
 ```
+
+## Reference
+
+- [ROS 2 Documentation: Jazzy - Tutorials](https://docs.ros.org/en/jazzy/Tutorials.html)

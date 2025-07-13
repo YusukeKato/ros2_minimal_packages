@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ros2_minimal_packages</name>
+  <version>0.0.0</version>
+  <description>ROS 2 Minimal Packages</description>
+  <maintainer email="yusukekato.contact@gmail.com">YusukeKato</maintainer>
+  <license>Apache 2.0</license>
+
+  <exec_depend>minimal_lifecycle_node</exec_depend>
+  <exec_depend>minimal_robot_description</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
