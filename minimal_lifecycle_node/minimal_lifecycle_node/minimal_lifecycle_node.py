@@ -12,6 +12,8 @@ class MinimalLifecycleNode(Node):
         self.node_name: str = node_name
         self.topic_name: str = 'minimal_lifecycle_node_topic'
         self.cnt: int = 0
+        self.pub = None
+        self.timer = None
         self.get_logger().info(self.node_name + ': initialized.')
 
     def pub_str(self):
