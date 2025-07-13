@@ -1,6 +1,8 @@
 # ros2_minimal_packages
 ROS 2 Minimal Packages for Tutorials.
 
+![](./images/rviz_minimal_wheeled_robot.png)
+
 ## Environments
 
 - Ubuntu 24.04 LTS
