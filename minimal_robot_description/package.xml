@@ -5,7 +5,7 @@
   <version>0.0.0</version>
   <description>Minimal Robot Description</description>
   <maintainer email="yusukekato.contact@gmail.com">YusukeKato</maintainer>
-  <license>Apache 2.0</license>
+  <license>Apache-2.0</license>
 
   <depend>xacro</depend>
   <depend>robot_state_publisher</depend>

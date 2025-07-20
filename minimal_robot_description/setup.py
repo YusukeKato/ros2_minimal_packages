@@ -25,7 +25,7 @@ setup(
     maintainer='YusukeKato',
     maintainer_email='yusukekato.contact@gmail.com',
     description='Minimal Robot Description',
-    license='Apache 2.0',
+    license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
