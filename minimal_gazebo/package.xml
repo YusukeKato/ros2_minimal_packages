@@ -7,6 +7,9 @@
   <maintainer email="yusukekato.contact@gmail.com">YusukeKato</maintainer>
   <license>Apache-2.0</license>
 
+  <depend>ros_gz</depend>
+  <depend>robot_state_publisher</depend>
+
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
