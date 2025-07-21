@@ -1,0 +1,27 @@
+# Reference: https://github.com/rt-net/raspimouse_sim/blob/ros2/raspimouse_gazebo/config/raspimouse_controllers.yaml
+controller_manager:
+  ros__parameters:
+    update_rate: 10
+
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+diff_drive_controller:
+  ros__parameters:
+    left_wheel_names:
+      - left_wheel_joint
+
+    right_wheel_names:
+      - right_wheel_joint
+
+    wheel_separation : 0.2
+    wheels_per_side: 1
+    wheel_radius : 0.1
+
+    odom_frame_id: odom
+    base_frame_id: base_footprint
+    open_loop: false
+    enable_odom_tf: true

@@ -8,7 +8,11 @@
   <license>Apache-2.0</license>
 
   <depend>ros_gz</depend>
+  <depend>controller_manager</depend>
+  <depend>diff_drive_controller</depend>
+  <depend>joint_state_broadcaster</depend>
   <depend>robot_state_publisher</depend>
+  <depend>minimal_robot_description</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

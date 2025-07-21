@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <robot name="minimal_wheeled_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <xacro:include filename="$(find minimal_robot_description)/urdf/minimal_wheeled_robot.gazebo.xacro" />
+
   <xacro:property name="body_length" value="0.3"/>
   <xacro:property name="body_width" value="0.2"/>
   <xacro:property name="body_height" value="0.1"/>
@@ -93,5 +95,7 @@
     <origin xyz="0 ${-wheel_separation/2 - wheel_width/2} 0" rpy="${PI/2} 0 0"/>
     <axis xyz="0 0 -1"/>
   </joint>
+
+  <xacro:minimal_wheeled_robot_gazebo />
 
 </robot>

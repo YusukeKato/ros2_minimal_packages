@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!--
+Reference:
+gazebosim.org
+https://gazebosim.org/docs/latest/sdf_worlds/
+raspimouse_sim
+https://github.com/rt-net/raspimouse_sim/blob/ros2/raspimouse_gazebo/worlds/empty_world.sdf
+-->
+<sdf version="1.8">
+    <world name="empty">
+        <plugin
+            filename="gz-sim-physics-system"
+            name="gz::sim::systems::Physics">
+        </plugin>
+        <plugin
+            filename="gz-sim-user-commands-system"
+            name="gz::sim::systems::UserCommands">
+        </plugin>
+        <plugin
+            filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster">
+        </plugin>
+        <include>
+            <uri>
+                https://fuel.gazebosim.org/1.0/OpenRobotics/models/Sun
+            </uri>
+        </include>
+        <include>
+            <uri>
+                https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground%20Plane
+            </uri>
+        </include>
+    </world>
+</sdf>
