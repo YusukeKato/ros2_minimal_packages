@@ -1,3 +1,5 @@
+import os
+
 from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
@@ -9,11 +11,16 @@ from launch_ros.actions import SetParameter
 
 
 def generate_launch_description():
+    gazebo_world = os.path.join(
+        get_package_share_directory('minimal_gazebo'), 'worlds', 'empty.sdf'
+    )
+    gazebo_config = os.path.join(
+        get_package_share_directory('minimal_gazebo'), 'config', 'gazebo.config'
+    )
     gz_sim_command = ExecuteProcess(
         cmd=[
-            'gz sim -r',
-            get_package_share_directory('minimal_gazebo')
-            + '/worlds/empty.sdf',
+            'gz sim -r', gazebo_world,
+            '--gui-config', gazebo_config,
         ],
         shell=True,
     )
