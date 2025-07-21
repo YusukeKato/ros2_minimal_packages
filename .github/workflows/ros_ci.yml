@@ -1,0 +1,20 @@
+# Reference
+# https://github.com/rt-net/raspimouse2/blob/master/.github/workflows/industrial_ci.yml
+name: ROS 2 CI
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "45 10 * * 2" # At 10:45 AM (UTC) every Tuesday.
+jobs:
+  ros2_ci:
+    runs-on: ubuntu-latest
+    container:
+      image: osrf/ros:jazzy-desktop-full
+    steps:
+      - name: Checkout My ROS 2 Package
+        uses: actions/checkout@v4
+      - name: ROS 2 Build and Test
+        uses: "ros-industrial/industrial_ci@master"
+        env:
+          ROS_DISTRO: jazzy
