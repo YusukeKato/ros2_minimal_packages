@@ -2,15 +2,13 @@
 # https://github.com/rt-net/raspimouse2/blob/master/.github/workflows/industrial_ci.yml
 name: ROS 2 CI
 on:
-  push:
+  # push:
   pull_request:
   schedule:
     - cron: "45 10 * * 2" # At 10:45 AM (UTC) every Tuesday.
 jobs:
-  ros2_ci:
+  build_and_test:
     runs-on: ubuntu-latest
-    container:
-      image: osrf/ros:jazzy-desktop-full
     steps:
       - name: Checkout My ROS 2 Package
         uses: actions/checkout@v4
