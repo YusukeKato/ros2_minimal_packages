@@ -1,3 +1,5 @@
+# Reference
+# https://github.com/rt-net/raspimouse_sim/blob/ros2/raspimouse_gazebo/launch/raspimouse_with_emptyworld.launch.py
 import os
 
 from ament_index_python.packages import get_package_share_directory
