@@ -10,12 +10,20 @@
 $ ros2 launch minimal_gazebo minimal_gazebo.launch.py
 ```
 
+![](../images/gazebo_minimal_wheeled_robot.png)
+
 ## Start teleop_twist_keyboard
 
 ```sh
 sudo apt install ros-jazzy-teleop-twist-keyboard
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -p stamped:=true
 ```
+
+- k: stop
+- i: forward
+- ,: backward
+- j: left rotation
+- l: right rotation
 
 reference: https://rt-net.github.io/tutorials/raspimouse/simulator/install.html
 
