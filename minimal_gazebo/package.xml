@@ -1,17 +1,18 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>minimal_robot_description</name>
+  <name>minimal_gazebo</name>
   <version>0.0.0</version>
-  <description>Minimal Robot Description</description>
+  <description>Minimal Gazebo</description>
   <maintainer email="yusukekato.contact@gmail.com">YusukeKato</maintainer>
   <license>Apache-2.0</license>
 
-  <depend>xacro</depend>
-  <depend>gz_ros2_control</depend>
+  <depend>ros_gz</depend>
+  <depend>controller_manager</depend>
+  <depend>diff_drive_controller</depend>
+  <depend>joint_state_broadcaster</depend>
   <depend>robot_state_publisher</depend>
-  <depend>joint_state_publisher</depend>
-  <depend>joint_state_publisher_gui</depend>
+  <depend>minimal_robot_description</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
