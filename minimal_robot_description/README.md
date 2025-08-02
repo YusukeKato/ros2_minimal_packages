@@ -4,13 +4,23 @@
 
 [ros2_minimal_packages/README.md/#Install](../README.md#install)
 
-## Start RViz
+## Start RViz: Wheeled Robot
 
 ```sh
 $ ros2 launch minimal_robot_description minimal_wheeled_robot.launch.py
 ```
 
 ![](../images/rviz_minimal_wheeled_robot.png)
+
+## Start RViz: Manipulator
+
+Joint Rotate: Z-Y-Y-Z-Y-Z(6DoF)
+
+```sh
+$ ros2 launch minimal_robot_description minimal_manipulator.launch.py
+```
+
+![](../images/rviz_minimal_manipulator.png)
 
 ## Reference
 

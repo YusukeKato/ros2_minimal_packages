@@ -1,7 +1,15 @@
 # ros2_minimal_packages
 ROS 2 Minimal Packages for Tutorials.
 
+- Wheeled Robot
+    - Differential Drive Robot
+
 ![](./images/rviz_minimal_wheeled_robot.png)
+
+- Manipulator
+    - Z-Y-Y-Z-Y-Z (6DoF)
+
+![](./images/rviz_minimal_manipulator.png)
 
 ## Environments
 
